@@ -1,1 +1,449 @@
 
+package javapractice;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class JavaPractice {
+
+   
+    public static void main(String[] args) {
+        //Entrada de datos
+        Scanner entrada = new Scanner(System.in);
+        
+        //crear las variables
+      /*  int edad;
+        String nombre;
+        float altura;
+        
+        System.out.println("Digite su edad ");
+        edad = entrada.nextInt();
+        System.out.println(" ingrese su nombre ");
+        nombre = entrada.next();
+        System.out.println("Digite tu altura ");
+        altura = entrada.nextFloat();
+        
+        System.out.println("La edad es "+edad);
+        System.out.println("su nombre  es "+nombre);
+        System.out.println("su altura  es "+altura);
+*/
+      
+      /***********Concatenacion de variable**********************/
+      /* int numero = 10;
+      numero = numero + 20;
+      
+        System.out.println(numero);
+        
+        Aplica lo mismo para cadena de texto ejemplo "Cadena += "el texto a agregar"*/
+        
+        
+      /* ************Operadores primer ejercicio *******************/
+      
+      /***1. Calcular el lado de un cuadrado ******
+      
+      float superficie;
+      float lado;
+      
+        System.out.println("Ingrese el lado del cuadrado");
+        lado = entrada.nextFloat();
+        
+        superficie = lado * lado;
+        
+        System.out.println("el lado de la superficie es "+superficie); */
+      
+      
+      /****************2. Calcular la suma de 3 números conociendo los números*********
+      
+      int numero1;
+      int numero2;
+      int numero3;
+      
+        System.out.println("ingrese el primer numero ");
+        numero1 = entrada.nextInt();
+        System.out.println("ingrese el segundo numero ");
+        numero2 = entrada.nextInt();
+        System.out.println("ingrese el tercer numero ");
+        numero3 = entrada.nextInt();
+      
+        int suma = numero1+numero2+numero3;
+        
+        System.out.println("la suma de los 3 numero es "+suma); */
+      
+      
+            /****************3. Realizar la carga del lado de un cuadrado,mostrar por pantallael perimetro del mismo********
+
+            int lado;
+            int perimetro;
+            
+            System.out.print("digite el lado del cuadrado ");
+            lado = entrada.nextInt();
+            
+            perimetro = lado *4;
+      
+        System.out.println("el perimetro del cuadrado es "+perimetro); */
+            
+            
+            
+            
+            
+            /*****************4. Crear una aplicacion que dado a 2 valores calcular la suma, resta,multiplicacion y division de los valores**
+            
+            
+            double numero1;
+            double numero2;
+            
+            System.out.println("ingrese el primer valor ");
+            numero1 = entrada.nextDouble();
+            System.out.println("ingrese el primer valor ");
+            numero2 = entrada.nextDouble();
+            
+            
+            double suma = numero1 + numero2;
+            double multiplicacion = numero1 * numero2;
+            double resta = numero1 - numero2;
+            double division = numero1 / numero2;
+            
+            System.out.println("la suma de los numero es "+suma);
+            System.out.println("la resta de los numeros es "+resta);
+            System.out.println("la multiplicacion de los numeros es "+multiplicacion);
+            System.out.println("la division de los numeros "+division); */
+            
+            
+            
+            /**********Ejercicio 5. Crear una aplicacion que calcule el area de un triangulo, conociendo su base y su altura********
+            
+            double area;
+            double base;
+            double altura;
+            
+            
+            System.out.println("ingrese la base del triangulo ");
+            base = entrada.nextDouble();
+            System.out.println("ingrese la altura del triangulo");
+            altura = entrada.nextDouble();
+            
+            area = base * altura /2;
+            
+            System.out.println("el area del triangulo es "+ area); */
+            
+            
+            
+           /***************Ejercicio 6. Calcule el salio de un empleado*************
+           
+           double horaPaga = 4.860;
+           int horas;
+           int dias;
+           
+           System.out.println("ingrese las horas trabajadas");
+           horas = entrada.nextInt();
+           
+           double horaspagaspordia = horas * horaPaga;
+           
+           System.out.println("ingrese los dias trabajados ");
+           dias = entrada.nextInt();
+           
+           double sueldo_pagar = dias * horaspagaspordia;
+           
+           System.out.println(" el sueldo a pagar es "+sueldo_pagar); */
+           
+           
+           /************Ejercicio 7 Calcule el promedio de 5 notas****************
+           
+           
+           double nota1;
+           double nota2;
+           double nota3;
+           double nota4;
+           double nota5;
+           
+           System.out.println("ingrese la primera nota ");
+           nota1 = entrada.nextDouble();
+           System.out.println("ingrese la segunda nota ");
+           nota2 = entrada.nextDouble();
+           System.out.println("ingrese la tercera nota ");
+           nota3 = entrada.nextDouble();
+           System.out.println("ingrese la cuarta nota ");
+           nota4 = entrada.nextDouble();
+           System.out.println("ingrese la quinta nota ");
+           nota5 = entrada.nextDouble();
+           
+           double promedio = nota1+nota2+nota3+nota4+nota5 / 5;
+           System.out.println("el promedio de las notas es "+promedio); */
+           
+           /********************8. Ejercicio Se debe desarrollar un programa que pida el ingreso del precio de un 
+            * articulo y la cantidad que lleva el cliente.Mostras el valor a pagar del comprador
+            
+           
+           double precio;
+           int cantidad;
+           
+           System.out.println(" ingrese el precio del producto ");
+           precio = entrada.nextInt();
+           System.out.println(" ingrese la cantidad de productos a llevar");
+           cantidad = entrada.nextInt();
+           
+           double valorapagar = precio * cantidad;
+           
+           System.out.println("el valor a pagar del comprador es "+valorapagar); */
+           
+           
+           
+           /*************9.Crear una aplicacion que calcule la edad de una persona,para calcular su edad necesitamos su fecha de nacimiento y la actual
+           
+           int fechadenacimiento;
+           int fechaactual;
+           
+           System.out.println(" ingrese su fecha de nacimiento ");
+           fechadenacimiento = entrada.nextInt();
+           System.out.println("ingrese la fecha actual ");
+           fechaactual = entrada.nextInt();
+           
+           int edad = fechaactual - fechadenacimiento;
+           
+           System.out.println("su edad es "+edad);
+           
+           **/
+        /* 10. Ejercio crear una aplicacion que calcule el area de un trapecio 
+           double b, h, B, area;
+
+        System.out.println("Ingrese la base menor");
+        b = entrada.nextDouble();
+
+        System.out.println("Ingrese la altura");
+        h = entrada.nextDouble();
+
+        System.out.println("Ingrese la base mayor");
+        B = entrada.nextDouble();
+
+        area = ((B + b) * h) / 2;
+
+        System.out.println("El area del trapecio es: " + area); */
+           
+        
+        
+        /******************************11. Crear una aplicacion que nos pida dos caracteres por teclado, y dados a esos
+         * caracteres sumarlos y mostrarlos
+         
+           char caracter1 , caracter2;
+           String suma_caracter="";
+           
+           System.out.println("ingrese el primer caracter ");
+           caracter1 = entrada.next().charAt(0);
+           System.out.println("ingrese el segundo caracter ");
+           caracter2 = entrada.next().charAt(0);
+           
+           suma_caracter += caracter1 + caracter2;
+           
+           System.out.println("la suma de caracteres es "+suma_caracter); */
+        
+        
+           
+           /*******12. crear una aplicacion que nos pida 2 cadenas de texto por teclado, y de dichas cadenas mostrar su suma o combinacion
+            * 
+               
+           
+           String cadena1,cadena2,suma_cadenas="";
+           
+           System.out.println("ingrese la primera cadena de texto ");
+           cadena1 = entrada.nextLine();
+           System.out.println("ingrese la segunda cadena de texto ");
+           cadena2 = entrada.nextLine();
+           
+           suma_cadenas+= cadena1+cadena2;
+           
+           System.out.println("la suma de cadenas es "+suma_cadenas);
+            */
+           
+           
+           /************Ejercicio 13 Crear una aplicacion que calcule un numero a exponente X **
+           
+           int base;
+           int exponente;
+           
+           System.out.println("Digite  la base : ");
+           base = entrada.nextInt();
+           
+           System.out.println("digite el exponente ");
+           exponente = entrada.nextInt();
+           
+           int resultado = (int) Math.pow(base, exponente);
+           
+           System.out.println("el numero "+base+ "elevado al exponente"+exponente+"es :"+resultado); */
+           
+           
+           // condicionales
+           /*for (int i = 10;i>=1; i--){
+               System.out.println(i);
+           } */
+          
+           //manera de sacar numeros pares
+          /* System.out.println("digite la cantidad de terminos");
+          int  contador = entrada.nextInt();
+           for  (int i = 2; i <= contador ; i+=2){
+               System.out.println(i);
+           }*/
+          
+          /* USANDO LA METODOLIA DE WHILE EN CICLO
+          int numero,cuadrado;
+          
+          numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero"));
+          
+          while (numero >= 0){
+              cuadrado = (int)Math.pow(numero, 2);
+              JOptionPane.showMessageDialog(null, "El numero"+numero+"Elevedado es "+cuadrado);
+              
+                 numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero"));
+
+              
+
+          }*/
+          
+/* Ejercicio 2: Leer un numero e indicar si es positivo o negativo.
+El proceso se repetira hasta que se introduzca un 0.*/
+
+/*int numero;
+numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero"));
+
+while (numero !=0){
+    if (numero >0){
+        JOptionPane.showMessageDialog(null, "El numero es positivo "+numero);
+    }else{
+        JOptionPane.showMessageDialog(null, "El numero es negativo" +numero);
+        
+    }
+    numero = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero: "));
+
+    }
+*/
+
+/*Ejercicio 3: Leer números hasta que se introduzca un 0. Para cada uno indicar si es par o impar.*/
+
+
+/*int numero;
+
+numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero"));
+
+while (numero != 0){
+    if (numero % 2 == 0){
+        System.out.println("el numero es par "+numero);
+        
+    }else{
+        System.out.println("El numero es impar "+numero);
+    }
+    numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero"));
+}*/
+
+
+/*Ejercicio 4: Pedir numeros hasta que se teclee uno negativo, y mostrar cuantos numeros se han introducido.
+
+int numero,contador = 0;
+numero = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero"));
+
+while (numero >=0){
+    System.out.println("El numero ingresado es "+numero);
+    contador +=1 ;
+numero = Integer.parseInt(JOptionPane.showInputDialog("ingrese un numero"));
+System.out.println("el total de numeros contados es "+contador);
+
+}*/
+
+
+/*Ejercicio 5: Realizar un juego para adivinar un número. Para ello generar un número aleatorio entre 0-100, y luego ir    
+pidiendo números indicando “es mayor” o “es menor”
+según sea mayor o menor con respecto a N. El proceso termina     cuando el usuario acierta y mostrar el número de intentos.
+int numero,aleatorio,contador=0; 
+
+ aleatorio = (int)(Math.random()*100);
+ 
+        do{
+            numero =Integer.parseInt(JOptionPane.showInputDialog("Digite un numero"));
+            
+            if (aleatorio > numero){
+                System.out.println("digite un numero mayor");
+            }else{
+                System.out.println("digita un numero menor");
+            }
+            contador ++;
+        }while(numero != aleatorio);
+                System.out.println("genial haz conseguido el numero sapo "+contador+" numero de intentos"); */
+
+
+
+ /*Ejercicio 6. Pedir numeros hasta que se teclee un 0, mostrar la suma de todos los numeros introducidos
+ 
+        int numero,suma=0;
+        
+        do{
+            numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero "));
+            suma+=numero;
+        }while(numero !=0);
+                JOptionPane.showMessageDialog(null,"La suma de los numeros ingresado es "+suma );*/
+        
+                
+                
+/*Ejercicio 7: Pedir números hasta que se introduzca uno negativo, y calcular la media.*/
+
+    /*int numero, elementos=0,suma=0;
+        float media;
+        
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un un nuemro"));
+        
+        while (numero >=0){
+            suma += numero;
+            elementos++;
+            numero = Integer.parseInt(JOptionPane.showInputDialog("Ingresa un un nuemro"));
+        }
+        if(elementos ==0){
+            System.out.println("Error la division entre 0 no existe");
+        }else{
+            media= (float)suma /elementos;
+            System.out.println("la media es "+media);
+        }*/
+    /* Ejercicio 8: Pedir un numero N, y mostrar todos los numeros del 1 al N. 
+package ejercicioats8;
+      int numero, contador = 1;
+        
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero: "));
+        
+        do {
+            System.out.println(contador);
+            contador++;
+        }while(contador <= numero); */
+    
+    
+    /* Ejercicio 9: Escribir todos los números del 100 al 0 de 7 en 7.*/
+    
+   /* for (int i = 100 ; i >= 0; i-=7){
+        System.out.println(i);
+    }*/
+
+   
+   /* Ejercicio 10: Pedir 10 numeros y escribir la suma total */
+
+   /*int numero,sumador=0;
+   
+   for  (int i= 1;i<=10 ;i++){
+        System.out.println("Digite un numero "+i+":");
+        numero = entrada.nextInt();
+        sumador+=numero;
+        
+    }
+        System.out.println("la suma de los numero es "+sumador);*/
+   
+   
+   /*Ejercicio 11: Diseñar un programa que muestre el producto de los 10 primeros números impares.
+   
+   long producto = 1;
+   
+   for (int i = 1; i <=20; i+=2){
+       producto *= i;
+       
+       System.out.println("El producto es "+producto);
+       
+   }.*/
+   
+    }
+    
+    
+}
