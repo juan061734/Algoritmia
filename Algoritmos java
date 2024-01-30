@@ -1,0 +1,267 @@
+Desisciones logicas
+
+1. Scanner entrada = new Scanner (System.in);
+        // Elabore un algoritmo que permita averiguar cuál es el nombre del mayor de 2 hermanos no gemelos.
+        //Como datos de entrada se tiene el nombre y la edad de las 2 personas.
+        
+        System.out.println("ingrese el nombre del primer hermano");
+        String nombre1 = entrada.nextLine();
+        System.out.println("ingrese la edad del primer hermano");
+        int edad1 = entrada.nextInt();
+        
+        System.out.println("Ingrese el nombre del segundo hermano:");
+        entrada.nextLine(); 
+        String nombre2 = entrada.nextLine();
+        System.out.println("Ingrese la edad de " + nombre2 + ":");
+        int edad2 = entrada.nextInt();
+        
+        if (edad1 > edad2){
+            System.out.println(nombre1+"es el mayor "+edad1);
+            
+        } else if (edad2 > edad1) {
+            System.out.println(nombre2 + " es el hermano mayor."+edad2);
+            }else{
+            System.out.println(nombre1+" y "+nombre2+"tienen la misma edad");
+
+2.Scanner entrada = new Scanner (System.in);
+       // Elabore un algoritmo que lea el nombre, el salario bruto, las deducciones y las bonificaciones de dos trabajadores, 
+       //e imprima el nombre del que mas salario neto tiene.
+       System.out.println("ingrese los datos del primer trabajador");
+       System.out.println("ingrese el nombre del empleado");
+       String nombre1 = entrada.nextLine();
+       System.out.println("ingrese el salario bruto ");
+       double bruto1 = entrada.nextDouble();
+       System.out.println("ingrese la deducciones ");
+       double deducciones1 = entrada.nextDouble();
+       System.out.println("ingrese sus bonificaciones ");
+       double bonificacion1 = entrada.nextDouble();
+       
+       
+      double salarioneto1 = bruto1 - deducciones1 + bonificacion1;
+      
+       System.out.println("ingrese los datos del segundo  trabajador");
+       System.out.println("ingrese el nombre del empleado");
+       String nombre2 = entrada.nextLine();
+       System.out.println("ingrese el salario bruto ");
+       double bruto2 = entrada.nextDouble();
+       System.out.println("ingrese la deducciones ");
+       double deducciones2 = entrada.nextDouble();
+       System.out.println("ingrese sus bonificaciones ");
+       double bonificacion2 = entrada.nextDouble();
+       
+       
+      double salarioneto2 = bruto2 - deducciones2 + bonificacion2;
+      
+      if (salarioneto1 > salarioneto2){
+          System.out.println(nombre1+" tiene el salio neto mas alto $"+salarioneto1);
+        }else if (salarioneto2 > salarioneto1){
+              System.out.println(nombre2+"tiene el salario neto mas alto $"+salarioneto2);
+              }else{
+                System.out.println(nombre1+" y "+nombre2+" tienen el mismo salario neto");
+      }
+
+
+3.Scanner entrada = new Scanner (System.in);
+        // Crear un algoritmo que le permita al usuario ingresar los datos de dos buses así: Placa,
+        //El número de pasajeros transportado y el valor del pasaje, y el computador le muestre la placa del bus que más dinero recogió.
+        
+          String placaMasDinero="";
+          double dineroMasDinero= Double.MIN_VALUE;
+          
+          for (int i =1; i<=2; i++){
+              
+              System.out.println("ingrese la placa del bus "+i+":");
+              String placa = entrada.nextLine();
+              System.out.println("ingrese el numero de pasajeros");
+              int pasajeros = entrada.nextInt();
+              System.out.println("ingrese el valor del pasaje");
+              double pasaje = entrada.nextDouble();
+              entrada.nextLine(); 
+              double dinerorecogido= pasajeros *pasaje;
+              
+              if(dinerorecogido > dineroMasDinero){
+              dineroMasDinero = dinerorecogido;
+              placaMasDinero = placa;
+          }
+
+          }
+           System.out.println("El bus con placa " + placaMasDinero + " recogió más dinero."+dineroMasDinero);
+
+4.
+Scanner entrada = new Scanner (System.in);
+       // Elaborar un algoritmo donde el usuario ingrese la placa de un bus, 
+       //el número de pasajeros transportados y la ruta donde prestó el servicio (A o B) 
+       //el computador le debe mostrar el dinero que recolectó sabiendo que en la ruta A el pasaje es a $1.200 y en la B a $1.000
+       
+       System.out.println("ingrese el numero de placa del bus");
+       String placa = entrada.nextLine();
+       System.out.println("ingrese el numero de pasajeros transportados");
+       int pasajeros = entrada.nextInt();
+       
+       entrada.nextLine();
+       System.out.println("ingrese la ruta que donde presto los servicio A O B");
+       String ruta = entrada.nextLine();
+       
+       double pasaje=0;
+       if (ruta.equalsIgnoreCase("A") ){
+           pasaje = 1.200;
+       }else if (ruta.equalsIgnoreCase("B")){
+           pasaje = 1.300;
+       }else{
+           System.out.println("Ingrese una ruta valida");
+           return;
+       }
+          double dineroR = pasajeros * pasaje;
+       System.out.println("El bus con placa " + placa + " recolectó $" + dineroR);
+        entrada.close();
+
+5.
+
+Scanner entrada = new Scanner (System.in);
+        
+ // Crear un algoritmo que le permita al usuario ingresar el tipo de trabajador (FIJO O TEMPORAL) y 
+ //con base en esto pueda imprimir el nombre y el salario neto, 
+ //sabiendo que si es FIJO debe leer el nombre, el número de horas trabajadas, 
+ //el salario básico hora, el total de deducciones y el total de bonificaciones 
+ //y si es TEMPORAL solo debe leer el nombre y el número de horas trabajadas; 
+ //estos trabajadores tienen un salario básico hora fijo de $6.000 y no tienen deducciones ni bonificaciones.
+ 
+        System.out.println("ingrese el tipo de trabajador que eres ");
+        String tipo = entrada.nextLine();
+    double neto;
+    String nombre;
+    
+    
+    if(tipo.equalsIgnoreCase("FIJO")){
+        System.out.println("ingresa tu nombre");
+         nombre = entrada.nextLine();
+         System.out.println("ingrese sus horas trabajadas");
+         double horas = entrada.nextDouble();
+         System.out.println("ingrese el salario basico por hora ");
+         double bhora = entrada.nextDouble();
+         System.out.println("ingresa las deducciones");
+         double deducciones = entrada.nextDouble();
+         System.out.println("ingresa la bonificaciones");
+         double bonificacion = entrada.nextDouble();
+         
+         neto = horas * bhora - deducciones + bonificacion;
+        
+    }else if(tipo.equalsIgnoreCase("TEMPORAL")){
+        System.out.println("ingrese su nombre ");
+         nombre = entrada.nextLine();
+        System.out.println("ingrese sus horas trabajadas");
+        double horas = entrada.nextDouble();
+        double bhora = 6000;
+        neto = horas * bhora;
+        
+    }else{
+        System.out.println("tipo de trabajador incorrecto");
+        return;
+    }
+    
+        System.out.println("Nombre del trabajador "+nombre);
+        System.out.println("tipo de trabajador "+tipo);
+        System.out.println("salario neto $  "+neto);
+        
+        entrada.close();
+
+
+DESICIONES ANINADAS 
+
+
+1.
+// Elaborar Un algoritmo que le permita al usuario Escribir 3 número y el computador le imprima el menor de ellos.
+        
+        Scanner entrada = new Scanner (System.in);
+        System.out.println("Ingrese el primer número:");
+        int numero1 = entrada.nextInt();
+
+        System.out.println("Ingrese el segundo número:");
+        int numero2 = entrada.nextInt();
+
+        System.out.println("Ingrese el tercer número:");
+        int numero3 = entrada.nextInt();
+    int menor;
+        if (numero1 <= numero2) {
+            if (numero1 <= numero3) {
+                menor = numero1;
+            } else {
+                menor = numero3;
+            }
+        } else {
+            if (numero2 <= numero3) {
+                menor = numero2;
+            } else {
+                menor = numero3;
+            }
+        }
+        System.out.println("El menor número es: " + menor);
+
+        
+        entrada.close();
+
+
+2. Scanner entrada = new Scanner (System.in);
+       
+       // Crear un algoritmo que le permita al usuario ingresar el nombre de un estudiante y las 4 notas que obtuvo en una materia 
+       //y el computador le imprima el nombre, la nota definitiva y un mensaje que le indique si "GANA", "HABILITA" O "PIERDE".
+       
+       System.out.println("ingrese su nombre");
+       String nombre = entrada.nextLine();
+       
+       System.out.println("ingrese su primera nota");
+       double nota1 = entrada.nextDouble();
+       System.out.println("ingrese su segunda nota");
+       double nota2 = entrada.nextDouble();
+       System.out.println("ingrese su tercera nota");
+       double nota3 = entrada.nextDouble();
+       System.out.println("ingrese su cuarta nota");
+       double nota4 = entrada.nextDouble();
+       
+       double definitiva = (nota1+nota2+nota3+nota4/4);
+       
+       if (definitiva >= 4.5){
+           System.out.println("El estudiante ganta "+definitiva);
+       }else if(definitiva >= 4.4) {
+           System.out.println("el estudiante HABILITA "+definitiva);
+       }else{
+           System.out.println("el estudiante pierder");
+       }
+
+
+3.
+/// Se necesita un programa que diga si una persona es apta para un equipo de baloncesto o no,
+        //para que sea apto debe cumplir que si es hombre sea mayor de edad, que mida mas de 1.70 mts., que pese menos de 75 kg., 
+        //o si es mujer que tenga más de 16 años, que mida como mínimo 1.70 y que pese como máximo 60 kg. 
+        //Se debe leer el nombre, el sexo (F = femenino, M = masculino), la edad, la estatura y el peso.
+        
+        Scanner entrada = new Scanner (System.in);
+        
+        System.out.println(" ingrese su nombre");
+        String nombre = entrada.nextLine();
+        
+        System.out.println("ingresu su sexo (F = femenino , M = Masculino):");
+        String sexo = entrada.nextLine();
+        System.out.println("Ingrese la edad:");
+        int edad = entrada.nextInt();
+
+        System.out.println("Ingrese la estatura (en metros):");
+        double estatura = entrada.nextDouble();
+
+        System.out.println("Ingrese el peso (en kilogramos):");
+        double peso = entrada.nextDouble();
+        
+        if (sexo.equalsIgnoreCase("M" )&& edad >= 18 && estatura >= 1.70&& peso  < 75){
+           
+        }else if (sexo.equalsIgnoreCase("F" )&& edad >= 16 && estatura >= 1.70&& peso  <= 60){
+            
+        }else {
+            System.out.println("el estudiante no es apto");
+            
+        }
+         System.out.println("el estudiante es apto para el equipo");
+            System.out.println("******DATOS******");
+            System.out.println("Nombre "+nombre);
+            System.out.println("Edad "+edad);
+            System.out.println("estatura "+estatura);
+            System.out.println("Peso "+peso);
